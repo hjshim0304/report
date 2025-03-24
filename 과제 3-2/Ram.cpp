@@ -3,7 +3,9 @@
 using namespace std;
 
 Ram::Ram() {
-	mem[100 * 1024] = 0;
+	for (int i = 0; i < 100 * 1024; i++) {
+		mem[i] = 0;
+	}
 	size = 100 * 1024;
 }
 
