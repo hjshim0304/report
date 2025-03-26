@@ -5,14 +5,16 @@ using namespace std;
 
 int main() {
 	string str;
-	int len;
+	int index = 0;
 	int count = 0;
 
 	cout << "문자열 입력>> ";
-	cin >> str;
-	len = str.length();
-	for (int i = 0; i < len; i++) {
-		if (str[i] == 'a') count++;
+	getline(cin, str);
+	
+	while (index != -1) {
+		index = str.find('a', index+1);
+		count++;
 	}
+	
 	cout << "문자 a는 " << count << "개 있습니다." << endl;
 }
