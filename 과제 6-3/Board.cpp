@@ -4,12 +4,14 @@
 
 using namespace std;
 
-string Board::add(string msg){
+int Board::size = 0;
+
+void Board::add(string msg){
 	text[size] = msg;
 	size++;
-	cout << size << text << endl;
 }
-string Board::print(){
+void Board::print(){
+	cout << "게시판입니다." << endl;
 	for (int i = 0; i < size; i++) {
 		cout << i << ": " << text[i] << endl;
 	}
