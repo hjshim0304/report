@@ -24,7 +24,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a2836f80-5da1-4b80-802c-4ddb9bf6fcd6}</ProjectGuid>
+    <ProjectGuid>{74293EB0-B8DB-4790-A5D0-22D521674619}</ProjectGuid>
     <RootNamespace>과제61</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>과제 6-1(1)</ProjectName>

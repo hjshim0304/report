@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0593797c-04a6-4714-a0a2-3887acb3f8c2}</ProjectGuid>
+    <ProjectGuid>{e8c7583f-ce50-4389-99e7-889a41bbc008}</ProjectGuid>
     <RootNamespace>과제612</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -127,7 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\과제 6-1\과제 6-1(2).cpp" />
+    <None Include="과제 6-12" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="과제 6-1%282%29.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
