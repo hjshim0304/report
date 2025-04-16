@@ -15,11 +15,11 @@ public:
         cout << title << ' ' << price << "원 " << pages << " 페이지" << endl;
     }
     string getTitle() { return title; }
-    bool operator <(string str);
+    friend bool operator <(Book c, string str);
 };
 
-bool Book::operator <(string str) {
-    return this->title < str;
+bool operator <(Book c, string str) {
+    return c.title < str;
 }
 
 int main() {
