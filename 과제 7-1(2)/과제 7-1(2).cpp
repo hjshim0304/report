@@ -8,15 +8,17 @@ class Book {
     int price;
     int pages;
 public:
-    Book(string title = "", int price = 0, int pages = 0) {
-        this->title = title; this->price = price; this->pages = pages;
-    }
-    void show() {
-        cout << title << ' ' << price << "원 " << pages << " 페이지" << endl;
-    }
+    Book(string title, int price, int pages);
+    void show() { cout << title << ' ' << price << "원 " << pages << " 페이지" << endl; }
     string getTitle() { return title; }
     friend bool operator <(Book c, string str);
 };
+
+Book::Book(string title = "", int price = 0, int pages = 0) {
+    this->title = title;
+    this->price = price;
+    this->pages = pages;
+}
 
 bool operator <(Book c, string str) {
     return c.title < str;

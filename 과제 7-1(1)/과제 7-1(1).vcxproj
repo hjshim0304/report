@@ -127,9 +127,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="과제 7-11" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="과제 7-1%281%29.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
