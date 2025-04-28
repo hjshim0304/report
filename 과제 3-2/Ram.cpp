@@ -1,5 +1,6 @@
 #include<iostream>
 #include "Ram.h"
+
 using namespace std;
 
 Ram::Ram() {
