@@ -4,30 +4,27 @@
 using namespace std;
 
 class Person {
+private:
 	string name;
 	string tel;
 public:
 	Person(){}
-	Person(string n, string t) {
-		name = n;
-		tel = t;
-	};
-	~Person() {
-
-	};
-
-	string getName() {
-		return name;
-	}
-	string getTel() {
-		return tel;
-	}
-
-	void set(string n, string t) {
-		name = n;
-		tel = t;
-	}
+	Person(string n, string t);
+	~Person() {};
+	string getName() { return name; }
+	string getTel() { return tel; }
+	void set(string n, string t);
 };
+
+Person::Person(string n, string t) {
+	name = n;
+	tel = t;
+}
+
+void Person::set(string n, string t) {
+	name = n;
+	tel = t;
+}
 
 int main() {
 	Person list[3];
