@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="과제 6-12" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="과제 6-1%282%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
