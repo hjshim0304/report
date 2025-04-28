@@ -11,7 +11,6 @@ int main() {
 		for (int j = 0; j <= i; j++) {
 			cout << str[j];
 		}
-		//	if (str[i] == '\0') break;
 		cout << endl;
 	}
 
