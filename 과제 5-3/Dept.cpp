@@ -10,9 +10,7 @@ Dept::Dept(const Dept& dept) {
 	scores = dept.scores;
 }
 
-Dept::~Dept() {
-
-}
+Dept::~Dept() {}
 
 void Dept::read() {// size 만큼 키보드에서 정수를 읽어 scores 배열에 저장
 	for (int i = 0; i < size; i++) {
