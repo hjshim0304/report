@@ -33,13 +33,9 @@ public:
 
 int main() {
 	Shape* p[3];
-	Oval b("ºó´ë¶±", 20, 10);
-	Rect c("Âû¶±", 20, 60);
-	Triangular t("Åä½ºÆ®", 20, 60);
-
-	p[0] = &b;
-	p[1] = &c;
-	p[2] = &t;
+	p[0] = new Oval("ºó´ë¶±", 20, 10);
+	p[1] = new Rect("Âû¶±", 20, 60);
+	p[2] = new Triangular("Åä½ºÆ®", 20, 60);
 
 	for(int i=0;i<3;i++){
 		cout << p[i]->getName() << " ³ÐÀÌ´Â " << p[i]->getArea() << endl;
