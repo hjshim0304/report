@@ -12,31 +12,40 @@ int main() {
 
     while (type < 3) {
         if (type == 0) {
-            cout << "삽입:1, 검사:2, 종료:3>>";
+            cout << "삽입:1, 검사:2, 종료:3>> ";
             cin >> type;
         }
 
         if (type == 1) {
             string name, code;
-            cout << "이름 암호>>";
+            cout << "이름 암호>> ";
             cin >> name >> code;
             WHO.insert(make_pair(name, code));
             type = 0;
         }
 
         if (type == 2) {
-            string name, code, tar;
+            string name, code;
+            bool pass = false;
             cout << "이름? ";
             cin >> name;
-            cout << "암호? ";
-            cin >> tar;
-            if (WHO[name] == tar) {
-                cout << "통과!!" << endl;
+            while (pass == false) {
+                cout << "암호? ";
+                cin >> code;
+                if (WHO[name] == code) {
+                    cout << "통과!!" << endl;
+                    pass = true;
+                    type = 0;
+                }
+                else {
+                    cout << "실패~~" << endl;
+                    pass = false;
+                }
             }
-            else {
-                cout << "실패~~" << endl;
-                type = 2;
-            }
+        }
+
+        if (type == 3) {
+            cout << "프로그램을 종료합니다..." << endl;
         }
     }
 }
