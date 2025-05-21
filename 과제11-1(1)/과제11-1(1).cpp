@@ -4,11 +4,11 @@
 using namespace std;
 
 int main() {
-	string str;
+	char ch[100];
 	while (true) {
-		cin.getline(str, 100);
-		if (strcmp(str, "^Z")) break;
-		cin.ignore(100, ";");
+		cin.getline(ch, 100, ';');
+		if (strcmp(ch, "^Z") == 0) break;
+		cout << ch << endl;
+		cin.ignore(100, '\n');
 	}
-	cout << str;
 }
